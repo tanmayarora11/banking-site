@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+
+<div class="form">
+	<div class="container">
+		<div class="form-inner">
+<form action="/transfer" method="POST">
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Transfer from :-</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  name="senderId" placeholder="Enter senders name" autocomplete="off">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Transfer To :-</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  name="recieverId" placeholder="Enter receivers name" autocomplete="off">
+
+   </div>
+   <div class="form-group">
+    <label for="exampleInputAmount">Amount</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="amount" placeholder="Enter amount" autocomplete="off">
+    
+   </div>
+ <button type="submit" class="btn btn-secondary btn-lg">Transfer</button>
+</form>
+</div>
+</div>
+</div>
+
+<%- include("partials/footer"); -%>

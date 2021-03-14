@@ -1,0 +1,22 @@
+<%- include("partials/header"); -%>
+
+<div class="customer-information">
+   	<div class="container">
+   	  	<div class="customer-information-inner">
+   	  		<div class="card-title welcoming"><h2><%= customer.name %>'s Info!</h2></div>
+   	  		
+   	  		<div class="card">
+
+  <img class="card-img-top" src="../images/user.jpg" alt="Card image cap" width="200px" height="300px">
+  <div class="card-body">
+    <h5 class="card-title"><%= customer.name %></h5>
+    <p class="card-text">Email: <%= customer.email %></p>
+    <p class="card-text"> Amount: <%= customer.Amount %></p>
+    <a href="/transfer"><button type="button" class="btn btn-warning">Transfer Money</button></a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<%- include("partials/footer"); -%>

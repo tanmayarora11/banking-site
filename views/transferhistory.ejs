@@ -1,0 +1,31 @@
+<%- include("partials/header"); -%>
+
+	<div class="Customers-table">
+	<h1 class="customer-heading">Customers Transfer Information</h1>
+	<div class="container">
+		<div class="Customers-table-inner">
+	<table class="table">
+		<thead>
+
+			<tr class="row1">
+				<th>SENDER'S NAME</th>
+				<th>RECEIVER'S NAME</th>
+				<th>AMOUNT TRANSFERRED</th>
+			</tr>
+			<tr>
+			<% transferList.forEach(function(transfer){%>
+			<tr class="d1">
+              <td><%= transfer.sendername %> </td>
+              <td><%= transfer.receivername %> </td>
+              <td><%= transfer.amount %></td>
+            </tr>
+		     <%});%>
+		</tr>
+
+		</thead>
+	</table>
+</div>
+</div>
+</div>
+
+<%- include("partials/footer"); -%>
