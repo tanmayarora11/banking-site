@@ -1,5 +1,7 @@
 const express=require("express");
+const dotenv = require("dotenv");
 const mongoose=require("mongoose");
+dotenv.config();
 
 const app = express();
 app.set("view engine","ejs");
@@ -7,7 +9,8 @@ app.set("view engine","ejs");
 app.use(express.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://tanmay-admin:tanmay123@cluster0.8jdvg.mongodb.net/customerdb?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology: true});
+const dbUrl = process.env.DB_URL
+mongoose.connect(dbUrl,{useNewUrlParser:true,useUnifiedTopology: true});
 mongoose.set("useFindAndModify", false);
 
 var customerSchema=new mongoose.Schema({
