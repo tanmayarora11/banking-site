@@ -11,7 +11,6 @@ app.use(express.static("public"));
 
 const dbUrl = process.env.DB_URL
 mongoose.connect(dbUrl,{useNewUrlParser:true,useUnifiedTopology: true});
-mongoose.set("useFindAndModify", false);
 
 var customerSchema=new mongoose.Schema({
 	name:{
