@@ -1,22 +1,20 @@
 {
-  "name": "banking-site",
+  "name": "banking-site-master",
   "version": "1.0.0",
-  "description": "A basic banking-website",
+  "description": "bank",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Tanmay Arora",
-  "license": "ISC",
-  "engines": {
-    "node": "14.15.3"
-  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "mongoose": "^5.12.0",
+    "mongoose": "^5.12.13",
     "nodemon": "^2.0.7"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanmay Arora",
+  "license": "ISC"
 }
